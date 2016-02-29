@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SEPTA Regional Rail Fare Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="css/custom/rail_fares.css">
+  <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+   <div class="left_area"></div>
+   <div class="center_area">
+      <div class="title">
+      	<img src="img/SEPTA.png" height="25" width="40">
+      	<span class="rail">Regional Rail Fares</span>
+      </div>
+
+      <div class="comm">
+      	<p class="quest">Where are you going?</p>
+      	<select class="zone">
+  			<option value="1">CCP/1</option>
+  			<option value="2">Zone 2</option>
+  			<option value="3">Zone 3</option>
+  			<option value="4">Zone 4</option>
+  			<option value="5">NJ</option>
+		</select>
+      </div>
+
+      <div class="comm">
+      	<p class="quest">When are you riding?</p>
+        <select class="time">
+  			  <option value="weekday">Weekdays</option>
+          <option value="anytime">Anytime</option>
+  			  <option value="evening_weekend">Evening & Weekday</option>
+		    </select>
+		    <p class="help">Helper text that explains the options above.</p>
+      </div>
+
+      <div class="comm">
+      	<p class="quest">Where will you purchase the fare?</p>
+		<input type="radio" name="fare" value="advance_purchase" checked > <span class="radfare" >Station Kiosk</span><br>
+  		<input  type="radio" name="fare" value="onboard_purchase" class="onboard"> <span class="radfare" >Onboard</span>
+      </div>
+
+      <div class="comm">
+      	<p class="quest">How many rides will you need?</p>
+	      <input type="text" name="ride" class="ride">
+      </div>
+
+      <div class="foot">
+      	<span class="cost">Your fare will cost</span><br>
+		<span class="price">$0.00</span>
+      </div>
+   </div>
+   <div class="right_area"></div>
+</div>
+
+
+<script type="text/javascript" src="js/vendors/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/vendors/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="js/custom/rail_fares.js"></script>	
+</body>
+</html>

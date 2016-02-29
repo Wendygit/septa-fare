@@ -1,0 +1,136 @@
+body{ 
+    text-align:center;
+    font-family: Yu Gothic UI Semibold;  
+} 
+
+.container{
+    margin-bottom: 30px;
+}
+
+.center_area,.left_area,.right_area{
+    margin-bottom: 50px;
+    float: left;
+}
+.center_area{
+    border: 3px solid #E8E8E8;
+}
+
+.title{
+    background-color:#787878;
+    height: 45px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.rail{
+    color: white;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.quest{
+    font-size: 20px;
+    color: #787878;
+}
+.help{
+    font-size: 13px;
+    color: #787878;
+}
+select{
+    width:65%;
+    height: 45px;
+    border:2px solid #C8C8C8;
+    border-radius: 5px;
+    font-family: Yu Gothic UI Semibold;
+    font-size: 20px;
+    padding-left: 7px;
+    color: #787878;
+}
+.radfare{
+    font-size: 20px;
+    color: #787878;
+    margin-left: 5px;
+}
+.comm{
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 30px;
+}
+.onboard{
+    margin-left: -33px;
+}
+.ride{
+    width:130px;
+    height: 45px;
+    border:2px solid #C8C8C8;
+    border-radius: 5px;
+    font-family: Yu Gothic UI Semibold;
+    font-size: 20px;
+    text-align: center;
+    color: #787878;
+}
+
+.foot{
+    background-color:#787878;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cost{
+    font-size: 20px;
+    color:white;
+}
+
+.price{
+    font-family: Segoe UI Black;
+    font-size: 55px;
+    color:white;
+}
+
+@media screen and (min-width: 320px) {
+  .center_area {
+    width:100%;
+  }
+  .right_area{
+    width:0%;
+  }
+  .left_area{
+    width:0%;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-width: 768px){
+  .center_area {
+    width:100%;
+  }
+  .right_area{
+    width:0%;
+  }
+  .left_area{
+    width:0%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .center_area {
+    width:50%;
+  }
+  .right_area{
+    width:19%;
+  }
+  .left_area{
+    width:19%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .center_area {
+    width:40%;
+  }
+  .right_area{
+    width:29%;
+  }
+  .left_area{
+    width:29%;
+  }
+}
